@@ -5,13 +5,11 @@ class SearchBar extends Component {
   render(){
     return (
       <div>
-      <input onChange={this.onChangeEvent}/>
+      <input onChange={(event) => console.log(event.target.value)}/>
       </div>
     );
   }
-  onChangeEvent(event){
-    console.log(event.target.value);
-  }
+  
 }
 
 export default SearchBar;
