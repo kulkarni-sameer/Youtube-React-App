@@ -4,7 +4,8 @@ const VideoListItem = ({video, onVideoSelect}) => {
   const imageUrl = video.snippt.thumbnails.default.url;
   return (
     <div>
-    {video.snippet.description}
+    <img src={imageUrl}>
+    <p>{video.snippt.title}</p>
     </div>
   );
 }
